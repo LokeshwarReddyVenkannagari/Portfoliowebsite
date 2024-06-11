@@ -1,9 +1,6 @@
-// Enter all your detials in this file
-// Logo images
-import logogradient from "./assets/logo.svg";
-import logo from "./assets/logo2.svg";
 // Profile Image
 import profile from "./assets/profile.jpg";
+
 // Tech stack images
 import html from "./assets/techstack/html.png";
 import css from "./assets/techstack/css.png";
@@ -16,9 +13,16 @@ import bootstrap from "./assets/techstack/bootstrap.png";
 import vscode from "./assets/techstack/vscode.png";
 import github from "./assets/techstack/github.png";
 import git from "./assets/techstack/git.png";
+import oracle from "./assets/techstack/oracle.png";
 import npm from "./assets/techstack/npm.png";
 import postman from "./assets/techstack/postman.png";
-import figma from "./assets/techstack/figma.png";
+import eclipse from "./assets/techstack/eclipse.png";
+import intellij from "./assets/techstack/intellij.png";
+import java from "./assets/techstack/java.png";
+import python from "./assets/techstack/python.png";
+import nextjs from "./assets/techstack/nextjs.png";
+import firebase from "./assets/techstack/firebase.png";
+
 // Porject Images
 import projectImage1 from "./assets/projects/project1.jpg";
 import projectImage2 from "./assets/projects/project2.jpg";
@@ -27,54 +31,31 @@ import projectImage4 from "./assets/projects/project4.jpg";
 import projectImage5 from "./assets/projects/project5.jpg";
 import projectImage6 from "./assets/projects/project6.jpg";
 
-// Logos
-export const logos = {
-  logogradient: logogradient,
-  logo: logo,
-};
-
-// Enter your Personal Details here
 export const personalDetails = {
-  name: "Pavan MG",
+  name: "Lokeshwar Reddy",
   tagline: "I build things for web",
   img: profile,
-  about: `Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.`,
+  about:
+    "I am a skilled React.js frontend developer with a passion for creating seamless user experiences. With expertise in JavaScript and Redux, I build dynamic web applications and have developed several frontend projects. My problem-solving skills and dedication to continuous learning keep me updated with the latest industry trends. I deliver high-quality, user-centric solutions, making me a valuable asset to any team.",
 };
 
-// Enter your Social Media URLs here
+//Social Media URLs here
 export const socialMediaUrl = {
-  linkdein: "https://www.linkedin.com/",
-  github: "https://www.github.com/",
-  twitter: "https://twitter.com/",
-  instagram: "https://www.instagram.com/",
+  linkdein: "https://linkedin.com/in/lokeshwar-reddy-venkannagari-51772b310",
+  github: "https://github.com/LokeshwarReddyVenkannagari",
+  twitter: "https://twitter.com/Lokeshwar79",
 };
 
-// Enter your Work Experience here
 export const workDetails = [
   {
     Position: "Frontend Web Developer",
-    Company: `Company Name here`,
-    Location: "Bengaluru",
+    Company: `SMG Infotech`,
+    Location: "Hyderabad",
     Type: "Full Time",
-    Duration: "Sep 2021 - Dec 2021",
-  },
-  {
-    Position: "Internship",
-    Company: `Company Name here`,
-    Location: "Bengaluru",
-    Type: "Internship",
-    Duration: "Sep 2021 - Dec 2021",
-  },
-  {
-    Position: "Internship",
-    Company: `Company Name here`,
-    Location: "Bengaluru",
-    Type: "Internship",
-    Duration: "Sep 2021 - Dec 2021",
+    Duration: "july 2022 - Present",
   },
 ];
 
-// Enter your Education Details here
 export const eduDetails = [
   {
     Position: "Frontend Development",
@@ -84,15 +65,14 @@ export const eduDetails = [
     Duration: "Jan 2022 - Present",
   },
   {
-    Position: "Bachelor in Electronics & Communication",
-    Company: `Your College Name here`,
-    Location: "Bengaluru",
+    Position: "Bachelor of Technology 2022",
+    Company: `TKR Collage Of Engineering And Technology`,
+    Location: "Hyderabad",
     Type: "Full Time",
-    Duration: "Aug 2020 - Present",
+    Duration: "Aug 2018 - Jun 2022",
   },
 ];
 
-// Tech Stack and Tools
 export const techStackDetails = {
   html: html,
   css: css,
@@ -107,69 +87,80 @@ export const techStackDetails = {
   npm: npm,
   git: git,
   github: github,
-  figma: figma,
+  oracle: oracle,
+  eclipse: eclipse,
+  intellij: intellij,
+  java: java,
+  python: python,
+  nextjs: nextjs,
+  firebase: firebase,
 };
 
-// Enter your Project Details here
 export const projectDetails = [
   {
-    title: "Project title 1",
-    image: projectImage1,
-    description: `This is sample project description random things are here in description This is sample
-project lorem ipsum generator for dummy content`,
-    techstack: "HTML/CSS, JavaScript",
-    previewLink: "https://google.com",
-    githubLink: "https://github.com",
-  },
-  {
-    title: "Project title 2",
-    image: projectImage2,
-    description: `This is sample project description random things are here in description This is sample
-project lorem ipsum generator for dummy content`,
-    techstack: "HTML/CSS, JavaScript",
-    previewLink: "https://google.com",
-    githubLink: "https://github.com",
-  },
-  {
-    title: "Project title 3",
-    image: projectImage3,
-    description: `This is sample project description random things are here in description This is sample
-project lorem ipsum generator for dummy content`,
-    techstack: "HTML/CSS, JavaScript",
-    previewLink: "https://google.com",
-    githubLink: "https://github.com",
-  },
-  {
-    title: "Project title 4",
-    image: projectImage4,
-    description: `This is sample project description random things are here in description This is sample
-project lorem ipsum generator for dummy content`,
-    techstack: "HTML/CSS, JavaScript",
-    previewLink: "https://google.com",
-    githubLink: "https://github.com",
-  },
-  {
-    title: "Project title 5",
-    image: projectImage5,
-    description: `This is sample project description random things are here in description This is sample
-project lorem ipsum generator for dummy content`,
-    techstack: "HTML/CSS, JavaScript",
-    previewLink: "https://google.com",
-    githubLink: "https://github.com",
-  },
-  {
-    title: "Project title 6",
+    title: "React Quiz",
     image: projectImage6,
-    description: `This is sample project description random things are here in description This is sample
-project lorem ipsum generator for dummy content`,
+    description:
+      "This is a sample project description for the React Quiz application. It includes random things here in the description and uses a lorem ipsum generator for dummy content.",
     techstack: "HTML/CSS, JavaScript",
+    previewLink: "https://reactquizbylokeshwar.netlify.app",
+    githubLink: "https://github.com/LokeshwarReddyVenkannagari/reactQuiz.git",
+  },
+
+  {
+    title: "My Portfolio Website",
+    image: projectImage2,
+    description:
+      "Explore my portfolio for a fusion of creativity and innovation, showcasing projects that push digital design boundaries.",
+    techstack: "HTML/CSS, JavaScript,react",
     previewLink: "https://google.com",
     githubLink: "https://github.com",
+  },
+
+  {
+    title: "NewsLetter Event",
+    image: projectImage3,
+    description: `Join us for our exciting upcoming newsletter event featuring exclusive updates, insightful articles, and special guest contributions!`,
+    techstack: "HTML/CSS, JavaScript,reactjs",
+    previewLink: "https://newsletterevents.netlify.app",
+    githubLink: "https://github.com/LokeshwarReddyVenkannagari/NewsLetter.git",
+  },
+
+  {
+    title: "TextUtil website",
+    image: projectImage5,
+    description:
+      "TextUtil Website provides a range of convenient text manipulation tools, facilitating efficient formatting and editing tasks.",
+    techstack: "HTML/CSS, JavaScript,Reactjs",
+    previewLink: "https://textutilwebsitebyreact.netlify.app",
+    githubLink:
+      "https://github.com/LokeshwarReddyVenkannagari/textutilwebsite.git",
+  },
+
+  {
+    title: "Food Order Website",
+    image: projectImage1,
+    description: `An online platform to order food from various restaurants with real-time tracking 
+                  and payment integration.`,
+    techstack: "HTML/CSS, JavaScript,ReactJs,Nodejs",
+    previewLink: "https://lokeshfoodorderwebsite.netlify.app",
+    githubLink:
+      "https://github.com/LokeshwarReddyVenkannagari/FoodOrderWebsiteReactjs.git",
+  },
+
+  {
+    title: "Events Page",
+    image: projectImage4,
+    description:
+      "Join us for a fun meetup to connect with like-minded individuals, explore interestsand build connections in our lively community!",
+    techstack: "reactquery,reactjs",
+    previewLink: "https://dulcet-meringue-a72be6.netlify.app",
+    githubLink: "https://github.com/LokeshwarReddyVenkannagari/React-query.git",
   },
 ];
 
 // Enter your Contact Details here
 export const contactDetails = {
-  email: "hi@example.com",
-  phone: "+91 12345 67890",
+  email: "LokeshwarReddy432@gmail.com ",
+  phone: "+91 8886177376",
 };

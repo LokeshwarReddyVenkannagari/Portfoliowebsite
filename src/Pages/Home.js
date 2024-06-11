@@ -1,87 +1,61 @@
-import React, { useRef, useEffect } from "react";
-import gsap from "gsap";
+import React from "react";
+import { motion } from "framer-motion";
 import { personalDetails } from "../Details";
 
 function Home() {
   const { name, tagline, img } = personalDetails;
-  const h11 = useRef();
-  const h12 = useRef();
-  const h13 = useRef();
-  const myimageref = useRef();
-  useEffect(() => {
-    const tl = gsap.timeline();
-    tl.from(
-      h11.current,
-      {
-        x: "-100%",
-        delay: 0.8,
-        opacity: 0,
-        duration: 2,
-        ease: "Power3.easeOut",
-      },
-      "<"
-    )
-      .from(
-        h12.current,
-        {
-          x: "-100%",
-          delay: 0.5,
-          opacity: 0,
-          duration: 2,
-          ease: "Power3.easeOut",
-        },
-        "<"
-      )
-      .from(
-        h13.current,
-        {
-          x: "-100%",
-          delay: 0.1,
-          opacity: 0,
-          duration: 2,
-          ease: "Power3.easeOut",
-        },
-        "<"
-      )
-      .from(
-        myimageref.current,
-        {
-          x: "200%",
-          delay: 0.5,
-          opacity: 0,
-          duration: 2,
-          ease: "Power3.easeOut",
-        },
-        "<"
-      );
-  }, []);
 
   return (
-    <main className="container mx-auto max-width section md:flex justify-between items-center">
+    <motion.main
+      className="container mx-auto max-w-screen-lg section md:flex justify-between items-center"
+      initial={{ opacity: 0, x: "-60%" }}
+      animate={{ opacity: 1, x: 0 }}
+      transition={{ duration: 1.5, ease: "easeOut" }}
+    >
       <div>
-        <h1
-          ref={h11}
+        <motion.h1
           className="text-2xl text-dark-heading dark:text-light-heading md:text-4xl xl:text-5xl xl:leading-tight font-bold"
+          initial={{ opacity: 0, x: "-60%" }}
+          animate={{ opacity: 1, x: 0 }}
+          transition={{ delay: 0.8, duration: 2, ease: "easeOut" }}
         >
-          Hi,👋<br></br>My Name is<br></br>
-        </h1>
-        <h1
-          ref={h12}
+          Hi,👋
+          <br />
+          My Name is
+        </motion.h1>
+        <motion.h1
           className="text-2xl bg-clip-text bg-gradient text-transparent md:text-4xl xl:text-5xl xl:leading-tight font-bold"
+          initial={{ opacity: 0, x: "-60%" }}
+          animate={{ opacity: 1, x: 0 }}
+          transition={{ delay: 1, duration: 2, ease: "easeOut" }}
         >
           {name}
-        </h1>
-        <h2
-          ref={h13}
+        </motion.h1>
+        <motion.h2
           className="text-2xl text-dark-heading dark:text-light-heading md:text-4xl xl:text-5xl xl:leading-tight font-bold"
+          initial={{ opacity: 0, x: "-60%" }}
+          animate={{ opacity: 1, x: 0 }}
+          transition={{ delay: 1.2, duration: 2, ease: "easeOut" }}
         >
           {tagline}
-        </h2>
+        </motion.h2>
       </div>
-      <div className="mt-5 md:mt-0">
-        <img ref={myimageref} className="w-1/2 md:ml-auto" src={img} alt="Pavan MG" />
-      </div>
-    </main>
+      <motion.div
+        className="mt-8 md:mt-0 md:ml-8"
+        initial={{ opacity: 0, x: "200%" }}
+        animate={{ opacity: 1, x: 0 }}
+        transition={{ delay: 1, duration: 2, ease: "easeOut" }}
+      >
+        <motion.img
+          className="w-full md:w-2/3 lg:w-1/2 mx-auto rounded-full shadow-lg"
+          src={img}
+          alt={name}
+          initial={{ opacity: 0, x: "200%" }}
+          animate={{ opacity: 1, x: 0 }}
+          transition={{ delay: 1.5, duration: 2, ease: "easeOut" }}
+        />
+      </motion.div>
+    </motion.main>
   );
 }
 
