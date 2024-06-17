@@ -49,7 +49,7 @@ export const socialMediaUrl = {
 export const workDetails = [
   {
     Position: "Frontend Web Developer",
-    Company: `SMG Infotech`,
+    Company: `INCOM SOLUTIONS Private Limited`,
     Location: "Hyderabad",
     Type: "Full Time",
     Duration: "july 2022 - Present",
@@ -113,8 +113,9 @@ export const projectDetails = [
     description:
       "Explore my portfolio for a fusion of creativity and innovation, showcasing projects that push digital design boundaries.",
     techstack: "HTML/CSS, JavaScript,react",
-    previewLink: "https://google.com",
-    githubLink: "https://github.com",
+    previewLink: "https://myportfoliowebsitebylokeshwar.netlify.app",
+    githubLink:
+      "https://github.com/LokeshwarReddyVenkannagari/Portfoliowebsite.git",
   },
 
   {
